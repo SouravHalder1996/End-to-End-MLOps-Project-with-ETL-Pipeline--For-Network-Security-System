@@ -1,3 +1,5 @@
 NetworkSecurity/
 Udemy/
 .env
+*.egg-info
+__pycache__/
