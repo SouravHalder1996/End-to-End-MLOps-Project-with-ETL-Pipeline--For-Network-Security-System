@@ -3,3 +3,5 @@ Udemy/
 .env
 *.egg-info
 __pycache__/
+logs/
+artifacts/
