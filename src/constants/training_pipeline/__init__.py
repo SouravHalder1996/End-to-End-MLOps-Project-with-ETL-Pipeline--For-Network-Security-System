@@ -1,4 +1,5 @@
 import os
+import numpy as np
 
 TARGET_COLUMN: str = "Result"
 PIPELINE_NAME: str = "NetworkSecurity"
@@ -22,3 +23,13 @@ DATA_VALIDATION_VALID_DIR: str = "valid"
 DATA_VALIDATION_INVALID_DIR: str = "invalid"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
+
+DATA_TRANSFORMATION_DIR_NAME: str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR: str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR: str = "transformed_object"
+PREPROCCESSING_OBJECT_FILE_NAME: str = "preprocessing.pkl"
+DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
+    "missing_values": np.nan,
+    "n_neighbors": 3,
+    "weights": "uniform"
+}
