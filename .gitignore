@@ -5,3 +5,4 @@ Udemy/
 __pycache__/
 logs/
 artifacts/
+mlruns/
